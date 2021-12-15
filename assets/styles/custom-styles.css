@@ -37,3 +37,42 @@
 .hamburger-btn:not(.opened) .hamburger_close {
     display: none;
 }
+
+
+.main-screen {
+    height: calc(100vh - 76px);
+}
+
+
+
+.main-screen__inner {
+    display: grid;
+    grid-template-columns: 1fr 668px 432px 1fr;
+    justify-content: center;
+}
+
+.main-screen__content {
+    grid-column: 2/span 1;
+}
+
+.main-screen__figure {
+    justify-self: end;
+    grid-column: span 2 /-1;
+}
+
+.main-screen__figure img {
+    height: calc(100vh - 76px);
+}
+
+@media (max-width: 1024px) {
+    .main-screen {
+        height: calc(100vh - 48px);
+    }
+
+    .main-screen__inner {
+        display: flex;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+}

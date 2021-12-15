@@ -11,6 +11,9 @@ module.exports = {
 					DEFAULT: "#181818",
 					black: "#18191F",
 				},
+				grey: {
+					DEFAULT: "#A5A7B2",
+				},
 			},
 			fontFamily: {
 				inter: "Inter, sans-serif",
