@@ -64,6 +64,34 @@
     height: calc(100vh - 76px);
 }
 
+.brands__inner {
+    position: relative;
+
+}
+.brands__inner::after,
+.brands__inner::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    left:0;
+    right: 0;
+    background-image: linear-gradient(to right, transparent, rgba(192,204,218,.3), transparent);
+}
+
+.brands__inner::after {
+    bottom: 0;
+}
+.brands__inner::before {
+    top: 0;
+}
+
+.brands__list {
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
 @media (max-width: 1024px) {
     .main-screen {
         height: calc(100vh - 48px);
