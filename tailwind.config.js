@@ -10,9 +10,13 @@ module.exports = {
 				kdark: {
 					DEFAULT: "#181818",
 					black: "#18191F",
+					darkGrey: "#4F4F4F",
 				},
 				grey: {
 					DEFAULT: "#A5A7B2",
+				},
+				brown: {
+					light: "#F8E1D1",
 				},
 			},
 			fontFamily: {

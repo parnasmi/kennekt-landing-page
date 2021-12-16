@@ -1,430 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <title>Main page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link href="./assets/styles/style.css" rel="stylesheet">
-    <link href="./assets/styles/custom-styles.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="ie=edge" http-equiv="x-ua-compatible">
+	<title>Main page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+	<link href="./assets/styles/style.css" rel="stylesheet">
+	<link href="./assets/styles/custom-styles.css" rel="stylesheet">
 </head>
 <body class="font-inter">
 <div class="outer-wrapper">
-    <!--    Intro Begin-->
-    <div class="intro h-screen">
-        <header class="page-header">
-            <div class="page-header__inner xl:max-w-[1100px] mx-auto
+	<!--    Intro Begin-->
+	<div class="intro h-screen">
+		<header class="page-header">
+			<div class="page-header__inner xl:max-w-[1100px] mx-auto
         flex items-center xl:py-4 p-2
         md:px-4 xl:px-0 justify-between xl:justify-start relative xl:static">
-                <div class="page-header__logo-btn-wrapper flex items-center">
-                    <button class="xl:hidden mr-2 text-3xl text-primary hamburger-btn w-8 h-8 flex-center-xy">
-                        <svg class="hamburger hamburger_idle " stroke="currentColor" fill="currentColor"
-                             stroke-width="0"
-                             viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
-                        </svg>
-                        <div class="w-6 h-6 border  border-primary text-primary rounded relative hamburger_close flex-center-xy">
-                            <svg class="m-0" stroke="currentColor" fill="currentColor" stroke-width="0"
-                                 viewBox="0 0 24 24"
-                                 height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="currentColor" stroke="currentColor" stroke-width="2"
-                                      d="M3,3 L21,21 M3,21 L21,3"></path>
-                            </svg>
-                        </div>
-                    </button>
-                    <div class="page-header__logo xl:mr-8">
-                        <a href="#" class="block">
-                            <img src="assets/img/logo-kennekt.svg" alt="Kennekt logo"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="page-header__nav xl:grow order-first xl:order-none
+				<div class="page-header__logo-btn-wrapper flex items-center">
+					<button class="xl:hidden mr-2 text-3xl text-primary hamburger-btn w-8 h-8 flex-center-xy">
+						<svg class="hamburger hamburger_idle " stroke="currentColor" fill="currentColor"
+								 stroke-width="0"
+								 viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+						</svg>
+						<div class="w-6 h-6 border  border-primary text-primary rounded relative hamburger_close flex-center-xy">
+							<svg class="m-0" stroke="currentColor" fill="currentColor" stroke-width="0"
+									 viewBox="0 0 24 24"
+									 height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg">
+								<path fill="currentColor" stroke="currentColor" stroke-width="2"
+											d="M3,3 L21,21 M3,21 L21,3"></path>
+							</svg>
+						</div>
+					</button>
+					<div class="page-header__logo xl:mr-8">
+						<a href="#" class="block">
+							<img src="assets/img/logo-kennekt.svg" alt="Kennekt logo"/>
+						</a>
+					</div>
+				</div>
+				<div class="page-header__nav xl:grow order-first xl:order-none
                         xl:static absolute top-full w-64 bg-white drop-shadow-xl xl:drop-shadow-none
                         p-4 xl:p-0 rounded-xl border opacity-0  pointer-events-none xl:opacity-100  xl:border-0
                         xl:pointer-events-auto translate-y-4 xl:translate-y-0 xl:w-auto">
-                    <ul class="page-header__nav-list list-none m-0 p0 xl:flex xl:gap-x-8 items-center ">
-                        <li class="relative mb-2 xl:m-0  page-header__nav-item page-header__nav-item_has-menu"><a
-                                class="page-header__link flex items-center " href="#">
-                            <span>Feature</span>
-                            <svg class="ml-2 transition" width="12" height="6" fill="currentColor"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                      d="M.97.22a.75.75 0 0 1 1.06 0L6 4.19 9.97.22a.75.75 0 1 1 1.06 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 0 1 0-1.06Z"
-                                      fill="currentColor"/>
-                            </svg>
-                        </a>
-                            <div class="page-header__dropdown z-10 rounded-xl bg-white w-64
+					<ul class="page-header__nav-list list-none m-0 p0 xl:flex xl:gap-x-8 items-center ">
+						<li class="relative mb-2 xl:m-0  page-header__nav-item page-header__nav-item_has-menu"><a
+										class="page-header__link flex items-center " href="#">
+							<span>Feature</span>
+							<svg class="ml-2 transition" width="12" height="6" fill="currentColor"
+									 xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M.97.22a.75.75 0 0 1 1.06 0L6 4.19 9.97.22a.75.75 0 1 1 1.06 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 0 1 0-1.06Z"
+											fill="currentColor"/>
+							</svg>
+						</a>
+							<div class="page-header__dropdown z-10 rounded-xl bg-white w-64
                     drop-shadow-xl absolute
                       opacity-0 top-8 border translate-y-4 pointer-events-none">
-                                <ul class="list-none">
-                                    <li><a href="#" class="nav-link">Cross platform</a></li>
-                                    <li><a href="#" class="nav-link">Powerful Case management</a></li>
-                                    <li><a href="#" class="nav-link">B.M. infrastructure containing client and staff
-                                        m.</a>
-                                    </li>
-                                    <li><a href="#" class="nav-link">News and Announcements</a></li>
-                                    <li><a href="#" class="nav-link">Case managements system</a></li>
-                                    <li class="px-5 pb-4 mt-2">
-                                        <a href="#"
-                                           class="block btn btn-outlined btn-normal btn-outlined-primary-lighter">
-                                            See all features
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="mb-2 xl:m-0"><a class="page-header__link" href="#">Home</a></li>
-                        <li class="mb-2 xl:m-0"><a class="page-header__link" href="#">About</a></li>
-                        <li class="mb-2 xl:m-0"><a class="page-header__link" href="#">Download</a></li>
-                        <li class="mb-2 xl:m-0"><a class="page-header__link" href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="page-header__btns flex items-center ml-auto">
-                    <a href="#" class="block btn btn-light btn-normal mr-2 xl:mr-3.5">
-                        Login
-                    </a>
-                    <a href="#" class="block btn btn-dark btn-normal">
-                        <span class="whitespace-nowrap">Try it</span>
-                        <span class="hidden xl:inline">for free</span>
-                    </a>
+								<ul class="list-none">
+									<li><a href="#" class="nav-link">Cross platform</a></li>
+									<li><a href="#" class="nav-link">Powerful Case management</a></li>
+									<li><a href="#" class="nav-link">B.M. infrastructure containing client and staff
+										m.</a>
+									</li>
+									<li><a href="#" class="nav-link">News and Announcements</a></li>
+									<li><a href="#" class="nav-link">Case managements system</a></li>
+									<li class="px-5 pb-4 mt-2">
+										<a href="#"
+											 class="block btn btn-outlined btn-normal btn-outlined-primary-lighter">
+											See all features
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mb-2 xl:m-0"><a class="page-header__link" href="#">Home</a></li>
+						<li class="mb-2 xl:m-0"><a class="page-header__link" href="#">About</a></li>
+						<li class="mb-2 xl:m-0"><a class="page-header__link" href="#">Download</a></li>
+						<li class="mb-2 xl:m-0"><a class="page-header__link" href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="page-header__btns flex items-center ml-auto">
+					<a href="#" class="block btn btn-light btn-normal mr-2 xl:mr-3.5">
+						Login
+					</a>
+					<a href="#" class="block btn btn-dark btn-normal">
+						<span class="whitespace-nowrap">Try it</span>
+						<span class="hidden xl:inline">for free</span>
+					</a>
 
-                </div>
-            </div>
-        </header>
-        <div class="main-screen">
-            <div class="main-screen__inner h-full">
-                <div class="main-screen__content h-full flex flex-col justify-center items-center xl:items-start ">
-                    <h1 class="text-2xl xl:text-5xl text-kdark-black font-bold mb-2">KENNEKT with
-                        accountability with
-                        your staff and clients</h1>
-                    <p class="text-grey text-sm xl:text-[18px] mb-8">Explore connecting with your staff and clients at a
-                        whole new level!
-                        Sign up now to see why businesses, staff & clients ALL love using KENNEKT.</p>
-                    <a href="#" class="block btn btn-dark btn-bigger mb-4 xl:mb-8">
-                        Get Started Now - It's Free
-                    </a>
-                    <p class="text-grey text-xs xl:text-base">By signing up, you agree to the Terms of Service</p>
-                </div>
-                <div class="main-screen__figure h-full  items-start justify-end hidden xl:flex">
-                    <picture>
-                        <!--                        <source media="(min-width: 38em)" srcset="medium-@2x.jpg 2x, medium.jpg 1x">-->
-                        <img
-                                src="assets/pics/pic-main-screen.png"
-                                srcset="assets/pics/pic-main-screen-2x.png 2x, assets/pics/pic-main-screen.png 1x"
-                                alt="Kennekt cases page interface">
-                    </picture>
-                </div>
-            </div>
+				</div>
+			</div>
+		</header>
+		<div class="main-screen">
+			<div class="main-screen__inner h-full">
+				<div class="main-screen__content h-full flex flex-col justify-center items-center xl:items-start ">
+					<h1 class="text-2xl xl:text-5xl text-kdark-black font-bold mb-2">KENNEKT with
+						accountability with
+						your staff and clients</h1>
+					<p class="text-grey text-sm xl:text-[18px] mb-8">Explore connecting with your staff and clients at a
+						whole new level!
+						Sign up now to see why businesses, staff & clients ALL love using KENNEKT.</p>
+					<a href="#" class="block btn btn-dark btn-bigger mb-4 xl:mb-8">
+						Get Started Now - It's Free
+					</a>
+					<p class="text-grey text-xs xl:text-base">By signing up, you agree to the Terms of Service</p>
+				</div>
+				<div class="main-screen__figure h-full  items-start justify-end hidden xl:flex">
+					<picture>
+						<!--                        <source media="(min-width: 38em)" srcset="medium-@2x.jpg 2x, medium.jpg 1x">-->
+						<img
+										src="assets/pics/pic-main-screen.png"
+										srcset="assets/pics/pic-main-screen-2x.png 2x, assets/pics/pic-main-screen.png 1x"
+										alt="Kennekt cases page interface">
+					</picture>
+				</div>
+			</div>
 
-        </div>
-    </div>
-    <!--    Intro End-->
-    <!--    Who are using section Begin-->
-    <div class="brands mb-4">
-        <div class="brands__inner xl:max-w-[1100px] mx-auto py-6">
-            <div class="brands__list flex items-center gap-x-16 justify-center py-4 px-4 ">
-                <div class="brands__item"><img class="max-w-none" src="assets/img/logo-airbnb.svg" alt=""></div>
-                <div class="brands__item"><img class="max-w-none" src="assets/img/logo-hubspot.svg" alt=""></div>
-                <div class="brands__item"><img class="max-w-none" src="assets/img/logo-google.svg" alt=""></div>
-                <div class="brands__item"><img class="max-w-none" src="assets/img/logo-microsoft.svg" alt=""></div>
-                <div class="brands__item"><img class="max-w-none" src="assets/img/logo-walmart.svg" alt=""></div>
-                <div class="brands__item"><img class="max-w-none" src="assets/img/logo-fedex.svg" alt=""></div>
-            </div>
-        </div>
-    </div>
-    <!--    Who are using section End-->
-    <!--    What Is Kennekt Begin-->
-    <div class="about">
-        <div class="about__inner xl:max-w-[1100px] mx-auto">
-            <div class="about__content">
-                <h2 class="about__title">What is Kennekt</h2>
-                <p> Kennekt is an easy system that quickly connects clients to businesses and businesses to clients.
-                    As a client, you've probably been put on hold for a long time, transferred to the wrong
-                    department or weren't able to reach who you wanted.
-                    Businesses can quickly create a mobile app presence using Kennekt. A business would quickly register
-                    and identify what its departments and sub-departments are. Within minutes, a business can offer
-                    its clients a higher level of service and quick communication. Having a quick pulse on your
-                    clients will surely enhance your clients experience and satisfaction.
-                </p>
-                <a href="#">Learn more &#8594;</a>
-            </div>
-            <div class="about__video max-w-4xl mx-auto">
-                <iframe
-                        class="w-full aspect-video"
-                        src="https://www.youtube.com/embed/XKmBLDYAYTg"
-                        title="Youtube video player"
-                        allow="accelerometer: autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                        allowfullscreen
-                        frameborder="0">
-                </iframe>
-            </div>
-        </div>
-    </div>
-    <!--    What Is Kennekt End-->
-    <!--    Keep your deals moving Begin-->
-    <div class="deals">
-        <div class="deals__inner">
-            <h2 class="deals__title">Keep your deals moving!</h2>
-            <div class="deals__description">
-                Now you can drag-and-drop multiple deals to other stages easily. Want something even
-                simpler? Drag multiple deals to the stage overview, and drop them over the stage you want.
-                Forget endlessly looking for that evading stage!
-            </div>
-            <div class="deals__img">
-                <picture>
-                    <img
-                            src="assets/pics/pic-deals.png"
-                            srcset="assets/pics/pic-deals-2x.png 2x, assets/pics/pic-deals.png 1x"
-                            alt="Kennekt cases page interface"
-                    />
-                </picture>
-            </div>
-        </div>
-    </div>
-    <!--    Keep your deals moving End-->
-    <!--    Tailor-made features Begin-->
-    <div class="features">
-        <div class="features__inner">
-            <div class="features__caption">Our features</div>
-            <div class="features__title">Tailor-made features</div>
-            <div class="features__descr">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem scelerisque elit sed ut
-                pellentesque. Auctor vivamus id eu vel ante fermentum.
-            </div>
-            <div class="features__list">
-                <div class="features__item">
-                    <div class="feature">
-                        <div class="features__image">
-                            <picture>
-                                <img
-                                        src="assets/pics/pic-client-management.png"
-                                        srcset="assets/pics/pic-client-management-2x.png 2x, assets/pics/pic-client-management.png 1x"
-                                        alt="Kennekt cases page interface"
-                                />
-                            </picture>
-                        </div>
-                        <div class="feature__title">Business client management</div>
-                        <div class="feature__descr">Businesslarda client management. linked clientlar, clientlarni
-                            invite qilish accountability.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--    Tailor-made features End-->
-    <!--   Work anywhere, with any device Begin-->
-    <div class="device">
-        <div class="device__inner">
-            <h2 class="device__title">Work anywhere, with any device</h2>
-            <p class="device__descr">These companies release their own versions of the operating systems with minor
-                changes, and yet always with the same bottom line. </p>
-            <div class="device__apps">
-                <div class="device__list">
-                    <div class="device__item">
-                        <a href="#" class="app-link block">
-                            <div class="app-link__icon">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                     height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                          d="M15.3007013,3.832 C16.1387013,2.818 16.7027013,1.405 16.5487013,0 C15.3407013,0.049 13.8797013,0.805 13.0137013,1.819 C12.2367013,2.717 11.5567013,4.154 11.7407013,5.531 C13.0867013,5.636 14.4627013,4.847 15.3007013,3.832 M18.3207013,12.75 C18.3547013,16.382 21.5067013,17.591 21.5417013,17.607 C21.5157013,17.692 21.0387013,19.329 19.8807013,21.02 C18.8807013,22.482 17.8427013,23.939 16.2067013,23.969 C14.5997013,23.998 14.0837013,23.016 12.2457013,23.016 C10.4097013,23.016 9.83570131,23.939 8.31370131,23.998 C6.73570131,24.058 5.53370131,22.417 4.52470131,20.961 C2.46370131,17.981 0.888701307,12.541 3.00370131,8.869 C4.05470131,7.045 5.93170131,5.89 7.96970131,5.861 C9.51970131,5.831 10.9827013,6.904 11.9307013,6.904 C12.8777013,6.904 14.6557013,5.614 16.5247013,5.803 C17.3077013,5.836 19.5037013,6.119 20.9147013,8.184 C20.8007013,8.254 18.2937013,9.714 18.3207013,12.75"></path>
-                                </svg>
-                            </div>
-                            <div class="app-link__content">
-                                <div class="muted">Download on the</div>
-                                <div class="accent">App store</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="device__item">
-                        <a href="#" class="app-link block">
-                            <div class="app-link__icon">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                     height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                          d="M15.3007013,3.832 C16.1387013,2.818 16.7027013,1.405 16.5487013,0 C15.3407013,0.049 13.8797013,0.805 13.0137013,1.819 C12.2367013,2.717 11.5567013,4.154 11.7407013,5.531 C13.0867013,5.636 14.4627013,4.847 15.3007013,3.832 M18.3207013,12.75 C18.3547013,16.382 21.5067013,17.591 21.5417013,17.607 C21.5157013,17.692 21.0387013,19.329 19.8807013,21.02 C18.8807013,22.482 17.8427013,23.939 16.2067013,23.969 C14.5997013,23.998 14.0837013,23.016 12.2457013,23.016 C10.4097013,23.016 9.83570131,23.939 8.31370131,23.998 C6.73570131,24.058 5.53370131,22.417 4.52470131,20.961 C2.46370131,17.981 0.888701307,12.541 3.00370131,8.869 C4.05470131,7.045 5.93170131,5.89 7.96970131,5.861 C9.51970131,5.831 10.9827013,6.904 11.9307013,6.904 C12.8777013,6.904 14.6557013,5.614 16.5247013,5.803 C17.3077013,5.836 19.5037013,6.119 20.9147013,8.184 C20.8007013,8.254 18.2937013,9.714 18.3207013,12.75"></path>
-                                </svg>
-                            </div>
-                            <div class="app-link__content">
-                                <div class="muted">Download on the</div>
-                                <div class="accent">App store</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="device__item">
-                        <a href="#" class="app-link block">
-                            <div class="app-link__icon">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                     height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                          d="M15.3007013,3.832 C16.1387013,2.818 16.7027013,1.405 16.5487013,0 C15.3407013,0.049 13.8797013,0.805 13.0137013,1.819 C12.2367013,2.717 11.5567013,4.154 11.7407013,5.531 C13.0867013,5.636 14.4627013,4.847 15.3007013,3.832 M18.3207013,12.75 C18.3547013,16.382 21.5067013,17.591 21.5417013,17.607 C21.5157013,17.692 21.0387013,19.329 19.8807013,21.02 C18.8807013,22.482 17.8427013,23.939 16.2067013,23.969 C14.5997013,23.998 14.0837013,23.016 12.2457013,23.016 C10.4097013,23.016 9.83570131,23.939 8.31370131,23.998 C6.73570131,24.058 5.53370131,22.417 4.52470131,20.961 C2.46370131,17.981 0.888701307,12.541 3.00370131,8.869 C4.05470131,7.045 5.93170131,5.89 7.96970131,5.861 C9.51970131,5.831 10.9827013,6.904 11.9307013,6.904 C12.8777013,6.904 14.6557013,5.614 16.5247013,5.803 C17.3077013,5.836 19.5037013,6.119 20.9147013,8.184 C20.8007013,8.254 18.2937013,9.714 18.3207013,12.75"></path>
-                                </svg>
-                            </div>
-                            <div class="app-link__content">
-                                <div class="muted">Download on the</div>
-                                <div class="accent">App store</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="device__pic">
-                <picture>
-                    <img
-                            src="assets/pics/pic-devices.png"
-                            srcset="assets/pics/pic-devices-2x.png 2x, assets/pics/pic-devices.png 1x"
-                            alt="Kennekt cases page interface"
-                    />
-                </picture>
-            </div>
-        </div>
-    </div>
-    <!--   Work anywhere, with any device End-->
-    <!--  Upcoming features Begin-->
-    <div class="upcoming">
-        <div class="upcoming__inner xl:max-w-[1100px] mx-auto">
-            <div class="upcoming__subtitle">
-                There's more to Bigin than what meets the eye!
-            </div>
-            <h2 class="upcoming__title">Here are some of our
-                upcoming features in 2022</h2>
-            <div class="upcoming__features-wrapper">
-                <div class="upcoming__item">
-                    <div class="upcoming-feat">
-                        <div class="upcoming-feat__icon">
-                            <img src="assets/img/icon-upcoming-train.svg" alt="">
-                        </div>
-                        <div class="upcoming-feat__content">
-                            <h3 class="upcoming-feat__title">eTrain module</h3>
-                            <p class="upcoming-feat__descr">Businesslarning stafflarni o'qitishlari
-                                uchun mo'ljallangan bo'lim.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="upcoming__item">
-                    <div class="upcoming-feat">
-                        <div class="upcoming-feat__icon">
-                            <img src="assets/img/icon-upcoming-train.svg" alt="">
-                        </div>
-                        <div class="upcoming-feat__content">
-                            <h3 class="upcoming-feat__title">eTrain module</h3>
-                            <p class="upcoming-feat__descr">Businesslarning stafflarni o'qitishlari
-                                uchun mo'ljallangan bo'lim.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="upcoming__item">
-                    <div class="upcoming-feat">
-                        <div class="upcoming-feat__icon">
-                            <img src="assets/img/icon-upcoming-train.svg" alt="">
-                        </div>
-                        <div class="upcoming-feat__content">
-                            <h3 class="upcoming-feat__title">eTrain module</h3>
-                            <p class="upcoming-feat__descr">Businesslarning stafflarni o'qitishlari
-                                uchun mo'ljallangan bo'lim.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="upcoming__item">
-                    <div class="upcoming-feat">
-                        <div class="upcoming-feat__icon">
-                            <img src="assets/img/icon-upcoming-train.svg" alt="">
-                        </div>
-                        <div class="upcoming-feat__content">
-                            <h3 class="upcoming-feat__title">eTrain module</h3>
-                            <p class="upcoming-feat__descr">Businesslarning stafflarni o'qitishlari
-                                uchun mo'ljallangan bo'lim.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="upcoming__item">
-                    <div class="upcoming-feat">
-                        <div class="upcoming-feat__icon">
-                            <img src="assets/img/icon-upcoming-train.svg" alt="">
-                        </div>
-                        <div class="upcoming-feat__content">
-                            <h3 class="upcoming-feat__title">eTrain module</h3>
-                            <p class="upcoming-feat__descr">Businesslarning stafflarni o'qitishlari
-                                uchun mo'ljallangan bo'lim.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="upcoming__item">
-                    <div class="upcoming-feat">
-                        <div class="upcoming-feat__icon">
-                            <img src="assets/img/icon-upcoming-train.svg" alt="">
-                        </div>
-                        <div class="upcoming-feat__content">
-                            <h3 class="upcoming-feat__title">eTrain module</h3>
-                            <p class="upcoming-feat__descr">Businesslarning stafflarni o'qitishlari
-                                uchun mo'ljallangan bo'lim.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--  Upcoming features End-->
-    <footer class="page-footer">
-        <div class="page-footer__inner xl:max-w-[1100px] mx-auto">
-            <div class="page-footer__left">
-                <div class="page-footer__logo">
-                    <img src="assets/img/logo-kennekt-dark.svg" alt="">
-                </div>
-                <div class="page-footer__links">
-                    <div class="flex">
-                        <a href="#" class="page-footer__link">Download Now</a>
-                        <a href="#" class="page-footer__link">License</a>
-                    </div>
-                </div>
-                <div class="page-footer__links">
-                    <div class="flex">
-                        <a href="#" class="page-footer__link">About</a>
-                        <a href="#" class="page-footer__link">Features</a>
-                        <a href="#" class="page-footer__link">Pricing</a>
-                        <a href="#" class="page-footer__link">Careers</a>
-                        <a href="#" class="page-footer__link">Help</a>
-                        <a href="#" class="page-footer__link">Privacy Policy</a>
-                    </div>
-                </div>
-                <div class="page-footer__copyright">© 2021 Kennekt. All rights reserved</div>
-            </div>
-            <div class="page-footer__right">
-                <div class="column-title">Get the App</div>
-                <div class="app-download-col">
-                    <a href="#" class="footer-app block">
-                        <div class="footer-app__icon">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                 height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                          d="M15.3007013,3.832 C16.1387013,2.818 16.7027013,1.405 16.5487013,0 C15.3407013,0.049 13.8797013,0.805 13.0137013,1.819 C12.2367013,2.717 11.5567013,4.154 11.7407013,5.531 C13.0867013,5.636 14.4627013,4.847 15.3007013,3.832 M18.3207013,12.75 C18.3547013,16.382 21.5067013,17.591 21.5417013,17.607 C21.5157013,17.692 21.0387013,19.329 19.8807013,21.02 C18.8807013,22.482 17.8427013,23.939 16.2067013,23.969 C14.5997013,23.998 14.0837013,23.016 12.2457013,23.016 C10.4097013,23.016 9.83570131,23.939 8.31370131,23.998 C6.73570131,24.058 5.53370131,22.417 4.52470131,20.961 C2.46370131,17.981 0.888701307,12.541 3.00370131,8.869 C4.05470131,7.045 5.93170131,5.89 7.96970131,5.861 C9.51970131,5.831 10.9827013,6.904 11.9307013,6.904 C12.8777013,6.904 14.6557013,5.614 16.5247013,5.803 C17.3077013,5.836 19.5037013,6.119 20.9147013,8.184 C20.8007013,8.254 18.2937013,9.714 18.3207013,12.75"></path>
-                            </svg>
-                        </div>
-                        <div class="footer-app__content">
-                            <span>Download on the</span>
-                            <span>App Store</span>
-                        </div>
-                    </a>
-                    <a href="#" class="footer-app block">
-                        <div class="footer-app__icon">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                 height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                      d="M15.3007013,3.832 C16.1387013,2.818 16.7027013,1.405 16.5487013,0 C15.3407013,0.049 13.8797013,0.805 13.0137013,1.819 C12.2367013,2.717 11.5567013,4.154 11.7407013,5.531 C13.0867013,5.636 14.4627013,4.847 15.3007013,3.832 M18.3207013,12.75 C18.3547013,16.382 21.5067013,17.591 21.5417013,17.607 C21.5157013,17.692 21.0387013,19.329 19.8807013,21.02 C18.8807013,22.482 17.8427013,23.939 16.2067013,23.969 C14.5997013,23.998 14.0837013,23.016 12.2457013,23.016 C10.4097013,23.016 9.83570131,23.939 8.31370131,23.998 C6.73570131,24.058 5.53370131,22.417 4.52470131,20.961 C2.46370131,17.981 0.888701307,12.541 3.00370131,8.869 C4.05470131,7.045 5.93170131,5.89 7.96970131,5.861 C9.51970131,5.831 10.9827013,6.904 11.9307013,6.904 C12.8777013,6.904 14.6557013,5.614 16.5247013,5.803 C17.3077013,5.836 19.5037013,6.119 20.9147013,8.184 C20.8007013,8.254 18.2937013,9.714 18.3207013,12.75"></path>
-                            </svg>
-                        </div>
-                        <div class="footer-app__content">
-                            <span>Download on the</span>
-                            <span>App Store</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+		</div>
+	</div>
+	<!--    Intro End-->
+	<!--    Who are using section Begin-->
+	<div class="brands mb-4">
+		<div class="brands__inner xl:max-w-[1100px] mx-auto py-6">
+			<div class="brands__list flex items-center gap-x-16 justify-center py-4 px-4 ">
+				<div class="brands__item"><img class="max-w-none" src="assets/img/logo-airbnb.svg" alt=""></div>
+				<div class="brands__item"><img class="max-w-none" src="assets/img/logo-hubspot.svg" alt=""></div>
+				<div class="brands__item"><img class="max-w-none" src="assets/img/logo-google.svg" alt=""></div>
+				<div class="brands__item"><img class="max-w-none" src="assets/img/logo-microsoft.svg" alt=""></div>
+				<div class="brands__item"><img class="max-w-none" src="assets/img/logo-walmart.svg" alt=""></div>
+				<div class="brands__item"><img class="max-w-none" src="assets/img/logo-fedex.svg" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<!--    Who are using section End-->
+	<!--    What Is Kennekt Begin-->
+	<div class="about py-8  xl:py-16 text-center px-6 xl:px-0">
+		<div class="about__inner xl:max-w-[1100px] mx-auto">
+			<div class="about__content px-7 py-9 bg-white drop-shadow-2xl rounded-2xl mb-8 xl:mb-16">
+				<h2 class="about__title section-title">What is Kennekt</h2>
+				<p class="text-grey mb-3 xl:mb-5 text-sm xl:text-lg"> Kennekt is an easy system that quickly connects clients to
+					businesses and businesses to clients.
+					As a client, you've probably been put on hold for a long time, transferred to the wrong
+					department or weren't able to reach who you wanted.
+					Businesses can quickly create a mobile app presence using Kennekt. A business would quickly register
+					and identify what its departments and sub-departments are. Within minutes, a business can offer
+					its clients a higher level of service and quick communication. Having a quick pulse on your
+					clients will surely enhance your clients experience and satisfaction.
+				</p>
+				<a href="#" class="text-lg text-primary font-bold transition hover:text-primary-lighter">Learn more &#8594;</a>
+			</div>
+			<div class="about__video max-w-4xl mx-auto">
+				<iframe
+								class="w-full aspect-video"
+								src="https://www.youtube.com/embed/XKmBLDYAYTg"
+								title="Youtube video player"
+								allow="accelerometer: autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+								allowfullscreen
+								frameborder="0"
+				>
+				</iframe>
+			</div>
+		</div>
+	</div>
+	<!--    What Is Kennekt End-->
+	<!--    Keep your deals moving Begin-->
+	<div class="deals pt-28 xl:pt-52 pb-16 xl:pb-32 bg-brown-light relative px-3 xl:px-0">
+		<div class="deals__top-curve"></div>
+		<div class="deals__inner xl:max-w-[1100px] mx-auto text-center">
+			<h2 class="deals__title section-title">Keep your deals moving!</h2>
+			<div class="deals__description font-medium text-sm mb-3 xl:text-xl xl:mb-7">
+				Now you can drag-and-drop multiple deals to other stages easily. Want something even
+				simpler? Drag multiple deals to the stage overview, and drop them over the stage you want.
+				Forget endlessly looking for that evading stage!
+			</div>
+			<div class="deals__img xl:max-w-5xl">
+				<picture>
+					<img
+									src="assets/pics/pic-deals.png"
+									srcset="assets/pics/pic-deals-2x.png 2x, assets/pics/pic-deals.png 1x"
+									alt="Kennekt cases page interface"
+					/>
+				</picture>
+			</div>
+		</div>
+	</div>
+	<!--    Keep your deals moving End-->
+	<!--    Tailor-made features Begin-->
+	<div class="features pt-16 pb-12 xl:pt-36 xl:pb-24">
+		<div class="features__inner xl:max-w-[1100px] mx-auto px-3 lg:px-0">
+			<div class="text-center">
+				<div class="features__caption text-primary-lighter mb-4 text-lg font-medium uppercase">Our features</div>
+				<div class="features__title section-title">Tailor-made features</div>
+				<div class="features__descr mx-auto text-sm xl:text-lg font-meduim mb-10">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem scelerisque elit sed ut
+					pellentesque. Auctor vivamus id eu vel ante fermentum.
+				</div>
+			</div>
+			<div class="features__list">
+			<!-- Start feature item-->
+				<div class="features__item">
+					<div class="feature h-full flex flex-col">
+						<div class="features__image">
+							<picture>
+								<img class=""
+												src="assets/pics/pic-client-management.png"
+												srcset="assets/pics/pic-client-management-2x.png 2x, assets/pics/pic-client-management.png 1x"
+												alt="Kennekt cases page interface"
+								/>
+							</picture>
+
+						</div>
+						<div class="feature__content flex flex-col grow">
+							<div class="feature__content-inner mb-7">
+								<div class="feature__title  text-xl xl:text-2xl text-primary-lighter font-bold mb-3.5">Business client management</div>
+								<div class="feature__descr text-base">Businesslarda client management. linked clientlar, clientlarni
+									invite qilish accountability.
+								</div>
+							</div>
+							<a href="" class="block mt-auto text-primary-lighter transition font-bold hover:text-primary font-lg">Learn more &#8594;</a>
+						</div>
+					</div>
+				</div>
+				<!-- End feature item-->
+				<!-- Start feature item-->
+				<div class="features__item">
+					<div class="feature h-full flex flex-col">
+						<div class="features__image">
+							<picture>
+								<img class=""
+										 src="assets/pics/pic-client-management.png"
+										 srcset="assets/pics/pic-client-management-2x.png 2x, assets/pics/pic-client-management.png 1x"
+										 alt="Kennekt cases page interface"
+								/>
+							</picture>
+
+						</div>
+						<div class="feature__content flex flex-col grow">
+							<div class="feature__content-inner mb-7">
+								<div class="feature__title  text-xl xl:text-2xl text-primary-lighter font-bold mb-3.5">Business client management</div>
+								<div class="feature__descr text-base">Businesslarda client management. linked clientlar, clientlarni
+									invite qilish accountability.
+								</div>
+							</div>
+							<a href="" class="block mt-auto text-primary-lighter transition font-bold hover:text-primary font-lg">Learn more &#8594;</a>
+						</div>
+					</div>
+				</div>
+				<!-- End feature item-->
+				<!-- Start feature item-->
+				<div class="features__item">
+					<div class="feature h-full flex flex-col">
+						<div class="features__image">
+							<picture>
+								<img class=""
+										 src="assets/pics/pic-client-management.png"
+										 srcset="assets/pics/pic-client-management-2x.png 2x, assets/pics/pic-client-management.png 1x"
+										 alt="Kennekt cases page interface"
+								/>
+							</picture>
+
+						</div>
+						<div class="feature__content flex flex-col grow">
+							<div class="feature__content-inner mb-7">
+								<div class="feature__title  text-xl xl:text-2xl text-primary-lighter font-bold mb-3.5">Business client management</div>
+								<div class="feature__descr text-base">Businesslarda client management. linked clientlar, clientlarni
+									invite qilish accountability.
+								</div>
+							</div>
+							<a href="" class="block mt-auto text-primary-lighter transition font-bold hover:text-primary font-lg">Learn more &#8594;</a>
+						</div>
+					</div>
+				</div>
+				<!-- End feature item-->
+				<!-- Start feature item-->
+				<div class="features__item">
+					<div class="feature h-full flex flex-col">
+						<div class="features__image">
+							<picture>
+								<img class=""
+										 src="assets/pics/pic-client-management.png"
+										 srcset="assets/pics/pic-client-management-2x.png 2x, assets/pics/pic-client-management.png 1x"
+										 alt="Kennekt cases page interface"
+								/>
+							</picture>
+
+						</div>
+						<div class="feature__content flex flex-col grow">
+							<div class="feature__content-inner mb-7">
+								<div class="feature__title  text-xl xl:text-2xl text-primary-lighter font-bold mb-3.5">Business client management</div>
+								<div class="feature__descr text-base">Businesslarda client management. linked clientlar, clientlarni
+									invite qilish accountability.
+								</div>
+							</div>
+							<a href="" class="block mt-auto text-primary-lighter transition font-bold hover:text-primary font-lg">Learn more &#8594;</a>
+						</div>
+					</div>
+				</div>
+				<!-- End feature item-->
+
+			</div>
+				<button class="btn table btn-outlined mx-auto btn-normal btn-outlined-dark rounded-xl mt-16 px-12 ">See all features</button>
+		</div>
+	</div>
+	<!--    Tailor-made features End-->
+	<!--   Work anywhere, with any device Begin-->
+	<div class="device">
+		<div class="device__inner">
+			<h2 class="device__title">Work anywhere, with any device</h2>
+			<p class="device__descr">These companies release their own versions of the operating systems with minor
+				changes, and yet always with the same bottom line. </p>
+			<div class="device__apps">
+				<div class="device__list">
+					<div class="device__item">
+						<a href="#" class="app-link block">
+							<div class="app-link__icon">
+								<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+										 height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+												d="M15.3007013,3.832 C16.1387013,2.818 16.7027013,1.405 16.5487013,0 C15.3407013,0.049 13.8797013,0.805 13.0137013,1.819 C12.2367013,2.717 11.5567013,4.154 11.7407013,5.531 C13.0867013,5.636 14.4627013,4.847 15.3007013,3.832 M18.3207013,12.75 C18.3547013,16.382 21.5067013,17.591 21.5417013,17.607 C21.5157013,17.692 21.0387013,19.329 19.8807013,21.02 C18.8807013,22.482 17.8427013,23.939 16.2067013,23.969 C14.5997013,23.998 14.0837013,23.016 12.2457013,23.016 C10.4097013,23.016 9.83570131,23.939 8.31370131,23.998 C6.73570131,24.058 5.53370131,22.417 4.52470131,20.961 C2.46370131,17.981 0.888701307,12.541 3.00370131,8.869 C4.05470131,7.045 5.93170131,5.89 7.96970131,5.861 C9.51970131,5.831 10.9827013,6.904 11.9307013,6.904 C12.8777013,6.904 14.6557013,5.614 16.5247013,5.803 C17.3077013,5.836 19.5037013,6.119 20.9147013,8.184 C20.8007013,8.254 18.2937013,9.714 18.3207013,12.75"></path>
+								</svg>
+							</div>
+							<div class="app-link__content">
+								<div class="muted">Download on the</div>
+								<div class="accent">App store</div>
+							</div>
+						</a>
+					</div>
+					<div class="device__item">
+						<a href="#" class="app-link block">
+							<div class="app-link__icon">
+								<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+										 height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+												d="M15.3007013,3.832 C16.1387013,2.818 16.7027013,1.405 16.5487013,0 C15.3407013,0.049 13.8797013,0.805 13.0137013,1.819 C12.2367013,2.717 11.5567013,4.154 11.7407013,5.531 C13.0867013,5.636 14.4627013,4.847 15.3007013,3.832 M18.3207013,12.75 C18.3547013,16.382 21.5067013,17.591 21.5417013,17.607 C21.5157013,17.692 21.0387013,19.329 19.8807013,21.02 C18.8807013,22.482 17.8427013,23.939 16.2067013,23.969 C14.5997013,23.998 14.0837013,23.016 12.2457013,23.016 C10.4097013,23.016 9.83570131,23.939 8.31370131,23.998 C6.73570131,24.058 5.53370131,22.417 4.52470131,20.961 C2.46370131,17.981 0.888701307,12.541 3.00370131,8.869 C4.05470131,7.045 5.93170131,5.89 7.96970131,5.861 C9.51970131,5.831 10.9827013,6.904 11.9307013,6.904 C12.8777013,6.904 14.6557013,5.614 16.5247013,5.803 C17.3077013,5.836 19.5037013,6.119 20.9147013,8.184 C20.8007013,8.254 18.2937013,9.714 18.3207013,12.75"></path>
+								</svg>
+							</div>
+							<div class="app-link__content">
+								<div class="muted">Download on the</div>
+								<div class="accent">App store</div>
+							</div>
+						</a>
+					</div>
+					<div class="device__item">
+						<a href="#" class="app-link block">
+							<div class="app-link__icon">
+								<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+										 height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+												d="M15.3007013,3.832 C16.1387013,2.818 16.7027013,1.405 16.5487013,0 C15.3407013,0.049 13.8797013,0.805 13.0137013,1.819 C12.2367013,2.717 11.5567013,4.154 11.7407013,5.531 C13.0867013,5.636 14.4627013,4.847 15.3007013,3.832 M18.3207013,12.75 C18.3547013,16.382 21.5067013,17.591 21.5417013,17.607 C21.5157013,17.692 21.0387013,19.329 19.8807013,21.02 C18.8807013,22.482 17.8427013,23.939 16.2067013,23.969 C14.5997013,23.998 14.0837013,23.016 12.2457013,23.016 C10.4097013,23.016 9.83570131,23.939 8.31370131,23.998 C6.73570131,24.058 5.53370131,22.417 4.52470131,20.961 C2.46370131,17.981 0.888701307,12.541 3.00370131,8.869 C4.05470131,7.045 5.93170131,5.89 7.96970131,5.861 C9.51970131,5.831 10.9827013,6.904 11.9307013,6.904 C12.8777013,6.904 14.6557013,5.614 16.5247013,5.803 C17.3077013,5.836 19.5037013,6.119 20.9147013,8.184 C20.8007013,8.254 18.2937013,9.714 18.3207013,12.75"></path>
+								</svg>
+							</div>
+							<div class="app-link__content">
+								<div class="muted">Download on the</div>
+								<div class="accent">App store</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="device__pic">
+				<picture>
+					<img
+									src="assets/pics/pic-devices.png"
+									srcset="assets/pics/pic-devices-2x.png 2x, assets/pics/pic-devices.png 1x"
+									alt="Kennekt cases page interface"
+					/>
+				</picture>
+			</div>
+		</div>
+	</div>
+	<!--   Work anywhere, with any device End-->
+	<!--  Upcoming features Begin-->
+	<div class="upcoming">
+		<div class="upcoming__inner xl:max-w-[1100px] mx-auto">
+			<div class="upcoming__subtitle">
+				There's more to Bigin than what meets the eye!
+			</div>
+			<h2 class="upcoming__title">Here are some of our
+				upcoming features in 2022</h2>
+			<div class="upcoming__features-wrapper">
+				<div class="upcoming__item">
+					<div class="upcoming-feat">
+						<div class="upcoming-feat__icon">
+							<img src="assets/img/icon-upcoming-train.svg" alt="">
+						</div>
+						<div class="upcoming-feat__content">
+							<h3 class="upcoming-feat__title">eTrain module</h3>
+							<p class="upcoming-feat__descr">Businesslarning stafflarni o'qitishlari
+								uchun mo'ljallangan bo'lim.</p>
+						</div>
+					</div>
+				</div>
+				<div class="upcoming__item">
+					<div class="upcoming-feat">
+						<div class="upcoming-feat__icon">
+							<img src="assets/img/icon-upcoming-train.svg" alt="">
+						</div>
+						<div class="upcoming-feat__content">
+							<h3 class="upcoming-feat__title">eTrain module</h3>
+							<p class="upcoming-feat__descr">Businesslarning stafflarni o'qitishlari
+								uchun mo'ljallangan bo'lim.</p>
+						</div>
+					</div>
+				</div>
+				<div class="upcoming__item">
+					<div class="upcoming-feat">
+						<div class="upcoming-feat__icon">
+							<img src="assets/img/icon-upcoming-train.svg" alt="">
+						</div>
+						<div class="upcoming-feat__content">
+							<h3 class="upcoming-feat__title">eTrain module</h3>
+							<p class="upcoming-feat__descr">Businesslarning stafflarni o'qitishlari
+								uchun mo'ljallangan bo'lim.</p>
+						</div>
+					</div>
+				</div>
+				<div class="upcoming__item">
+					<div class="upcoming-feat">
+						<div class="upcoming-feat__icon">
+							<img src="assets/img/icon-upcoming-train.svg" alt="">
+						</div>
+						<div class="upcoming-feat__content">
+							<h3 class="upcoming-feat__title">eTrain module</h3>
+							<p class="upcoming-feat__descr">Businesslarning stafflarni o'qitishlari
+								uchun mo'ljallangan bo'lim.</p>
+						</div>
+					</div>
+				</div>
+				<div class="upcoming__item">
+					<div class="upcoming-feat">
+						<div class="upcoming-feat__icon">
+							<img src="assets/img/icon-upcoming-train.svg" alt="">
+						</div>
+						<div class="upcoming-feat__content">
+							<h3 class="upcoming-feat__title">eTrain module</h3>
+							<p class="upcoming-feat__descr">Businesslarning stafflarni o'qitishlari
+								uchun mo'ljallangan bo'lim.</p>
+						</div>
+					</div>
+				</div>
+				<div class="upcoming__item">
+					<div class="upcoming-feat">
+						<div class="upcoming-feat__icon">
+							<img src="assets/img/icon-upcoming-train.svg" alt="">
+						</div>
+						<div class="upcoming-feat__content">
+							<h3 class="upcoming-feat__title">eTrain module</h3>
+							<p class="upcoming-feat__descr">Businesslarning stafflarni o'qitishlari
+								uchun mo'ljallangan bo'lim.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  Upcoming features End-->
+	<footer class="page-footer">
+		<div class="page-footer__inner xl:max-w-[1100px] mx-auto">
+			<div class="page-footer__left">
+				<div class="page-footer__logo">
+					<img src="assets/img/logo-kennekt-dark.svg" alt="">
+				</div>
+				<div class="page-footer__links">
+					<div class="flex">
+						<a href="#" class="page-footer__link">Download Now</a>
+						<a href="#" class="page-footer__link">License</a>
+					</div>
+				</div>
+				<div class="page-footer__links">
+					<div class="flex">
+						<a href="#" class="page-footer__link">About</a>
+						<a href="#" class="page-footer__link">Features</a>
+						<a href="#" class="page-footer__link">Pricing</a>
+						<a href="#" class="page-footer__link">Careers</a>
+						<a href="#" class="page-footer__link">Help</a>
+						<a href="#" class="page-footer__link">Privacy Policy</a>
+					</div>
+				</div>
+				<div class="page-footer__copyright">© 2021 Kennekt. All rights reserved</div>
+			</div>
+			<div class="page-footer__right">
+				<div class="column-title">Get the App</div>
+				<div class="app-download-col">
+					<a href="#" class="footer-app block">
+						<div class="footer-app__icon">
+							<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+									 height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd"
+											d="M15.3007013,3.832 C16.1387013,2.818 16.7027013,1.405 16.5487013,0 C15.3407013,0.049 13.8797013,0.805 13.0137013,1.819 C12.2367013,2.717 11.5567013,4.154 11.7407013,5.531 C13.0867013,5.636 14.4627013,4.847 15.3007013,3.832 M18.3207013,12.75 C18.3547013,16.382 21.5067013,17.591 21.5417013,17.607 C21.5157013,17.692 21.0387013,19.329 19.8807013,21.02 C18.8807013,22.482 17.8427013,23.939 16.2067013,23.969 C14.5997013,23.998 14.0837013,23.016 12.2457013,23.016 C10.4097013,23.016 9.83570131,23.939 8.31370131,23.998 C6.73570131,24.058 5.53370131,22.417 4.52470131,20.961 C2.46370131,17.981 0.888701307,12.541 3.00370131,8.869 C4.05470131,7.045 5.93170131,5.89 7.96970131,5.861 C9.51970131,5.831 10.9827013,6.904 11.9307013,6.904 C12.8777013,6.904 14.6557013,5.614 16.5247013,5.803 C17.3077013,5.836 19.5037013,6.119 20.9147013,8.184 C20.8007013,8.254 18.2937013,9.714 18.3207013,12.75"></path>
+							</svg>
+						</div>
+						<div class="footer-app__content">
+							<span>Download on the</span>
+							<span>App Store</span>
+						</div>
+					</a>
+					<a href="#" class="footer-app block">
+						<div class="footer-app__icon">
+							<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+									 height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd"
+											d="M15.3007013,3.832 C16.1387013,2.818 16.7027013,1.405 16.5487013,0 C15.3407013,0.049 13.8797013,0.805 13.0137013,1.819 C12.2367013,2.717 11.5567013,4.154 11.7407013,5.531 C13.0867013,5.636 14.4627013,4.847 15.3007013,3.832 M18.3207013,12.75 C18.3547013,16.382 21.5067013,17.591 21.5417013,17.607 C21.5157013,17.692 21.0387013,19.329 19.8807013,21.02 C18.8807013,22.482 17.8427013,23.939 16.2067013,23.969 C14.5997013,23.998 14.0837013,23.016 12.2457013,23.016 C10.4097013,23.016 9.83570131,23.939 8.31370131,23.998 C6.73570131,24.058 5.53370131,22.417 4.52470131,20.961 C2.46370131,17.981 0.888701307,12.541 3.00370131,8.869 C4.05470131,7.045 5.93170131,5.89 7.96970131,5.861 C9.51970131,5.831 10.9827013,6.904 11.9307013,6.904 C12.8777013,6.904 14.6557013,5.614 16.5247013,5.803 C17.3077013,5.836 19.5037013,6.119 20.9147013,8.184 C20.8007013,8.254 18.2937013,9.714 18.3207013,12.75"></path>
+							</svg>
+						</div>
+						<div class="footer-app__content">
+							<span>Download on the</span>
+							<span>App Store</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 </div>
 <script src="assets/js/main.js"></script>
 </body>

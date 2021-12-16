@@ -483,6 +483,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .btn-outlined {
   border-width: 1px;
 }
+.btn-outlined-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(79 79 79 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(79 79 79 / var(--tw-text-opacity));
+}
+.btn-outlined-dark:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 208 189 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 208 189 / var(--tw-text-opacity));
+}
 .btn-outlined-primary-lighter {
   --tw-border-opacity: 1;
   border-color: rgb(0 208 189 / var(--tw-border-opacity));
@@ -522,6 +534,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 208 189 / 0.1);
   --tw-text-opacity: 1;
   color: rgb(0 160 157 / var(--tw-text-opacity));
+}
+.section-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 800;
+}
+@media (min-width: 1280px) {
+
+  .section-title {
+    margin-bottom: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 .pointer-events-none {
   pointer-events: none;
@@ -572,11 +601,32 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+.mb-3\.5 {
+  margin-bottom: 0.875rem;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.mt-16 {
+  margin-top: 4rem;
+}
 .block {
   display: block;
 }
 .flex {
   display: flex;
+}
+.table {
+  display: table;
 }
 .hidden {
   display: none;
@@ -613,6 +663,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .max-w-4xl {
   max-width: 56rem;
+}
+.grow {
+  flex-grow: 1;
 }
 .translate-y-4 {
   --tw-translate-y: 1rem;
@@ -651,6 +704,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.rounded-2xl {
+  border-radius: 1rem;
+}
 .border {
   border-width: 1px;
 }
@@ -661,6 +717,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-brown-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 225 209 / var(--tw-bg-opacity));
 }
 .p-2 {
   padding: 0.5rem;
@@ -684,8 +744,47 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
+}
+.pt-28 {
+  padding-top: 7rem;
+}
+.pb-16 {
+  padding-bottom: 4rem;
+}
+.pt-16 {
+  padding-top: 4rem;
+}
+.pb-12 {
+  padding-bottom: 3rem;
+}
+.text-center {
+  text-align: center;
 }
 .font-inter {
   font-family: Inter, sans-serif;
@@ -706,8 +805,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .font-bold {
   font-weight: 700;
+}
+.font-medium {
+  font-weight: 500;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 .text-primary {
   --tw-text-opacity: 1;
@@ -721,6 +838,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(165 167 178 / var(--tw-text-opacity));
 }
+.text-primary-lighter {
+  --tw-text-opacity: 1;
+  color: rgb(0 208 189 / var(--tw-text-opacity));
+}
 .opacity-0 {
   opacity: 0;
 }
@@ -728,16 +849,35 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   filter: var(--tw-filter);
 }
+.drop-shadow-2xl {
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-filter);
+}
 .transition {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+.hover\:text-primary-lighter:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 208 189 / var(--tw-text-opacity));
+}
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 160 157 / var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
 
   .md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 @media (min-width: 1280px) {
@@ -774,6 +914,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 2rem;
   }
 
+  .xl\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .xl\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .xl\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
   .xl\:inline {
     display: inline;
   }
@@ -792,6 +944,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:max-w-\[1100px\] {
     max-width: 1100px;
+  }
+
+  .xl\:max-w-5xl {
+    max-width: 64rem;
   }
 
   .xl\:grow {
@@ -833,6 +989,27 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 0px;
   }
 
+  .xl\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .xl\:pt-52 {
+    padding-top: 13rem;
+  }
+
+  .xl\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  .xl\:pt-36 {
+    padding-top: 9rem;
+  }
+
+  .xl\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -845,6 +1022,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .xl\:opacity-100 {

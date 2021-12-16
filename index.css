@@ -36,8 +36,8 @@
         @apply border;
     }
 
-    .btn-outlined {
-        @apply border;
+    .btn-outlined-dark {
+        @apply text-kdark-darkGrey border-kdark-darkGrey hover:text-primary-lighter hover:border-primary-lighter;
     }
     .btn-outlined-primary-lighter {
         @apply border-primary-lighter text-primary-lighter hover:border-primary hover:text-primary;
@@ -49,5 +49,9 @@
 
     .nav-link {
         @apply px-4 py-3.5 block transition hover:bg-primary-lighter/10 hover:text-primary text-sm;
+    }
+
+    .section-title {
+        @apply xl:text-5xl font-extrabold xl:mb-5 text-2xl  mb-3;
     }
 }
